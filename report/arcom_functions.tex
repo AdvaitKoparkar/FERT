@@ -1,0 +1,141 @@
+% Expectation of a random variable
+\newcommand{\E}[2][]{{\mathbb{E}_{#1}}{\left(#2\right)}}       
+% Probability of event
+\renewcommand{\P}[2][]{{\mathbb{P}_{#1}}{\left(#2\right)}}
+% variance of random variable
+\newcommand{\Var}[1]{{\text{\textnormal{Var}}{\left(#1\right)}}}       
+% Divergence
+\newcommand{\D}[2]{{{\mathbb{D}}\!\left({#1\Vert#2}\right)}}
+\newcommand{\avgD}[2]{{{\mathbb{D}}\!\left({#1\Vert#2}\right)}}
+% Variational distance
+\newcommand{\V}[1]{{{\mathbb{V}}\!\left(#1\right)}}
+
+% Mutual information
+\newcommand{\avgI}[1]{{{\mathbb{I}}\!\left(#1\right)}}
+% Average entropy
+\newcommand{\avgH}[1]{{\mathbb{H}}\!\left(#1\right)}
+% Average diffenrental entropy
+\newcommand{\h}[1]{{{h}}\left(#1\right)}
+% Average binary entropy
+\newcommand{\Hb}[1]{{\mathbb{H}_b}\left(#1\right)}
+
+% Galois Field
+\newcommand{\GF}[1]{\ensuremath{\mbox{GF}(#1)}}
+\newcommand{\F}[1]{\ensuremath{\mathbb{F}_{#1}}}
+% Hamming distance
+\newcommand{\dH}[1]{\ensuremath{\mbox{d}_{\mbox{\tiny H}}(#1)}}
+% Weight
+\newcommand{\wt}[1]{\ensuremath{\mbox{wt}(#1)}}
+
+
+% General commands
+\newcommand{\card}[1]{\ensuremath{\left|{#1}\right|}}           % Cardinality
+\newcommand{\abs}[1]{\ensuremath{\left|#1\right|}}              % Absolute value        
+\newcommand{\norm}[2][]{\ensuremath{{\left\Vert{#2}\right\Vert}_{#1}}}   % Norm
+\newcommand{\eqdef}{\ensuremath{\triangleq}}                    % Defined by equality
+\newcommand{\intseq}[2]{\ensuremath{\llbracket{#1},{#2}\rrbracket}}  % Sequence of integers
+\newcommand{\indic}[1]{\ensuremath{\mathds{1}\!\left\{#1\right\}}}
+\newcommand{\dd}{\text{\textnormal{d}}}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+%%%%%% Matrix operations
+\newcommand{\tr}[1]{\ensuremath{\text{\textnormal{tr}}\left(#1\right)}}  % Trace
+\newcommand{\rk}[1]{\ensuremath{\text{\textnormal{rk}}\left(#1\right)}}  % Rank
+\renewcommand{\det}[1]{{\left|{#1}\right|}}                              % Det
+\renewcommand{\ker}[1]{\ensuremath{\text{\textnormal{Ker}}\left(#1\right)}}  % Kernel
+
+
+%% Legacy stuff
+\newcommand{\cl}[1]{\ensuremath{\text{\textnormal{cl}}\!\left(#1\right)}}% closure
+\newcommand{\ch}[1]{\ensuremath{\text{\textnormal{co}}\!\left(#1\right)}}% convex hull
+
+
+% Probability law
+\newcommand{\p}[2][]{\ensuremath{p_{#1}\!\left({#2}\right)}}
+
+
+\newcommand{\avgIk}[2]{\mathbb{I}_{#1}\left(#2\right)}
+% Random variable mutual information
+\newcommand{\I}[1]{{\randomvalue{I}}{\left(#1\right)}}
+
+\renewcommand{\H}[1]{{\randomvalue{H}}\!\left(#1\right)}
+
+
+% plimsup
+\newcommand{\plimsup}[2][n\rightarrow\infty]{\underset{#1}{\mbox{\textnormal{p-limsup}}\;}{#2}}
+% \newcommand{\plimsup}[2][n\rightarrow\infty]{\underset{#1}{\overline{\textnormal{p-lim}}\;}{#2}}
+% pliminf
+\newcommand{\pliminf}[2][n\rightarrow\infty]{\underset{#1}{\mbox{\textnormal{p-liminf}}\;}{#2}}
+% \newcommand{\pliminf}[2][n\rightarrow\infty]{\underset{#1}{\underline{\textnormal{p-lim}}\;}{#2}}
+% plim (convergence in probability)
+\newcommand{\plim}[2][n\rightarrow\infty]{\underset{#1}{\mbox{p-lim}\;}{#2}}
+% Strong typical set
+\newcommand{\sts}[3]{T_{#1}^{#2}\!(#3)}
+% Strong typical set with non empty sequences conditionally typical ones
+\newcommand{\stsne}[3]{S_{\left[#1\right]}^{#2}\!(#3)}
+
+
+
+
+% Mutual information
+% ex: \info{X}{\rvY|\rvZ} for I(X;\rvY|\rvZ)
+\newcommand{\info}[2]{\ensuremath{\mathbb{I}\!\left({#1};{#2}\right)}}
+\newcommand{\rvinfo}[2]{\ensuremath{\mathssf{i}\!\left({#1};{#2}\right)}}
+% KL divergence
+% ex: \KLdiv{X}{\rvY|\rvZ} for I(X;\rvY|\rvZ)
+\newcommand{\KLdiv}[2]{\ensuremath{\mathbb{D}\!\left({#1}||{#2}\right)}}
+% Entropy
+% ex: \entropy{X|\rvY} for H(X|\rvY)
+\newcommand{\entropy}[1]{\ensuremath{\mathbb{H}\!\left({#1}\right)}}
+
+% Differential entropy
+% ex: \diffentropy{X|\rvY} for h(X|\rvY)
+\newcommand{\diffentropy}[1]{\ensuremath{h\!\left({#1}\right)}}
+
+% Expectaction
+% ex: \expect{X^{2}} or \expect[X]{X^{2}} or 
+\newcommand{\expect}[2][]{\ensuremath{\mathbb{E}_{#1}{\left\{#2\right\}}}}
+
+% Discrete probability
+% ex: \dprob{X=3} \dprob[X\rvY]{X=3,\rvY=2}
+\newcommand{\dprob}[2][]{\ensuremath{\mbox{\textnormal{Pr}}_{#1}{\left[{#2}\right]}}}
+\newcommand{\cprob}[2][]{\ensuremath{p_{#1}\left({#2}\right)}}
+
+% Vector
+% ex: \vct{x} or \vct{X}
+\newcommand{\vct}[1]{\ensuremath{\mathbf{#1}}}
+
+% Vector expanded
+% ex: \vctlist{x}{1}{n}
+\newcommand{\vctlist}[3]{\ensuremath{\left(#1_{#2},\dots,#1_{#3}\right)}}
+
+% Set
+% ex: \setlist{1}{}
+%\newcommand{\setlist}[3][\dots]{\ensuremath{\left\{#2,#1,#3\right\}}}
+
+% Weakly typical set
+\newcommand{\wts}[2]{\ensuremath{A_{#1}^{(#2)}}}
+
+
+\newcommand{\argmin}{\mathop{\text{argmin}}}
+
+% Comments
+\newcommand{\mycomment}[1]{\marginpar{\raggedright\footnotesize\PencilRightDown~\textcolor{red}{#1}}}
+\newcommand{\mypar}[2]{\noindent\textbf{$\blacktriangleright$~#1}~{#2}}
+%\newcommand{\note}[2]{\fbox{\begin{minipage}{0.9\linewidth}{\noindent\textbf{\PencilRightDown~#1}~{#2}}\end{minipage}}\newline\hspace{25pt}}
+
+%%%%%% Sets, ensembles, etc.
+
+\newcommand{\proddist}{%
+  \mathchoice{\raisebox{1pt}{$\displaystyle\otimes$}}
+             {\raisebox{1pt}{$\otimes$}}
+             {\raisebox{0.5pt}{\scalebox{0.7}{$\scriptstyle\otimes$}}}
+             {\raisebox{0.4pt}{\scalebox{0.6}{$\scriptscriptstyle\otimes$}}}}
+\newcommand{\pn}{{\proddist n}}
+
+
+
+% citations needed
+\newcommand{\cn}{\textcolor{red}{[\raisebox{-0.2ex}{\tiny\shortstack{citation\\[-1ex]needed}}]}\xspace}

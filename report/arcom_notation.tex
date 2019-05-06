@@ -1,0 +1,175 @@
+%% Definitions of random variable fonts.
+\DeclareMathAlphabet{\eurm}{U}{eur}{m}{n}
+\DeclareMathAlphabet{\mathbsf}{OT1}{cmss}{bx}{n}% bold sans serif
+\DeclareMathAlphabet{\mathssf}{OT1}{cmss}{m}{sl}% slanted sans serif
+\DeclareMathAlphabet{\mathcsf}{OT1}{cmss}{sbc}{n}% condensed sans serif
+
+%% font change
+%\newcommand{\samplevalue}[1]{#1}
+%\newcommand{\randomvalue}[1]{\eurm{#1}}
+
+%% case change
+\newcommand{\samplevalue}[1]{{\lowercase{#1}}}
+\newcommand{\randomvalue}[1]{{\uppercase{#1}}}
+
+% define some useful uppercase Greek letters in regular and bold sf
+\DeclareSymbolFont{bsfletters}{OT1}{cmss}{bx}{n}  
+\DeclareSymbolFont{ssfletters}{OT1}{cmss}{m}{n}
+\DeclareMathSymbol{\bsfGamma}{0}{bsfletters}{'000}
+\DeclareMathSymbol{\ssfGamma}{0}{ssfletters}{'000}
+\DeclareMathSymbol{\bsfDelta}{0}{bsfletters}{'001}
+\DeclareMathSymbol{\ssfDelta}{0}{ssfletters}{'001}
+\DeclareMathSymbol{\bsfTheta}{0}{bsfletters}{'002}
+\DeclareMathSymbol{\ssfTheta}{0}{ssfletters}{'002}
+\DeclareMathSymbol{\bsfLambda}{0}{bsfletters}{'003}
+\DeclareMathSymbol{\ssfLambda}{0}{ssfletters}{'003}
+\DeclareMathSymbol{\bsfXi}{0}{bsfletters}{'004}
+\DeclareMathSymbol{\ssfXi}{0}{ssfletters}{'004}
+\DeclareMathSymbol{\bsfPi}{0}{bsfletters}{'005}
+\DeclareMathSymbol{\ssfPi}{0}{ssfletters}{'005}
+\DeclareMathSymbol{\bsfSigma}{0}{bsfletters}{'006}
+\DeclareMathSymbol{\ssfSigma}{0}{ssfletters}{'006}
+\DeclareMathSymbol{\bsfUpsilon}{0}{bsfletters}{'007}
+\DeclareMathSymbol{\ssfUpsilon}{0}{ssfletters}{'007}
+\DeclareMathSymbol{\bsfPhi}{0}{bsfletters}{'010}
+\DeclareMathSymbol{\ssfPhi}{0}{ssfletters}{'010}
+\DeclareMathSymbol{\bsfPsi}{0}{bsfletters}{'011}
+\DeclareMathSymbol{\ssfPsi}{0}{ssfletters}{'011}
+\DeclareMathSymbol{\bsfOmega}{0}{bsfletters}{'012}
+\DeclareMathSymbol{\ssfOmega}{0}{ssfletters}{'012}
+
+
+%% Random variable/vector declarations.  Please add in alphabetical
+%% order.  First section is for capitals.  Second for lower case.
+\newcommand{\rvA}{{\randomvalue{A}}}	% A
+\newcommand{\rvbA}{{\mathbsf{A}}}
+\newcommand{\rvB}{{\randomvalue{B}}}
+\newcommand{\rvbB}{{\mathbsf{B}}}
+\newcommand{\rvC}{{\randomvalue{C}}}
+\newcommand{\rvD}{{\randomvalue{D}}}
+\newcommand{\rvE}{{\randomvalue{E}}}
+\newcommand{\rvF}{{\randomvalue{F}}}
+\newcommand{\rvG}{{\randomvalue{G}}}
+\newcommand{\rvH}{{\randomvalue{H}}}
+\newcommand{\rvI}{{\randomvalue{I}}}
+\newcommand{\rvJ}{{\randomvalue{J}}}
+\newcommand{\rvK}{{\randomvalue{K}}}
+\newcommand{\rvL}{{\randomvalue{L}}}	% L
+\newcommand{\rvM}{{\randomvalue{M}}}	% M
+\newcommand{\rvN}{{\randomvalue{N}}}	% N
+\newcommand{\rvQ}{{\randomvalue{Q}}}	% R
+\newcommand{\rvR}{{\randomvalue{R}}}	% R
+\newcommand{\rvS}{{\randomvalue{S}}}	% S
+\newcommand{\rvT}{{\randomvalue{T}}}	% S
+\newcommand{\rvU}{{\randomvalue{U}}}	% U
+\newcommand{\rvV}{{\randomvalue{V}}}	% V
+\newcommand{\rvW}{{\randomvalue{W}}}	% W
+\newcommand{\rvX}{{\randomvalue{X}}}  	% X
+\newcommand{\rvY}{{\randomvalue{Y}}}	% Y
+\newcommand{\rvZ}{{\randomvalue{Z}}}	% Z
+
+\newcommand{\rva}{{\randomvalue{a}}}	% a
+\newcommand{\sva}{{\samplevalue{a}}}	% a
+\newcommand{\rvba}{{\mathbsf{a}}}
+\newcommand{\rvb}{{\randomvalue{b}}}	% b
+\newcommand{\svb}{{\samplevalue{b}}}	% b
+%\newcommand{\rvbh}{\hat{\rvb}}
+\newcommand{\rvc}{{\randomvalue{c}}}	% c
+\newcommand{\svc}{{\samplevalue{c}}}	% c
+\newcommand{\rvbc}{{\mathbsf{c}}}
+\newcommand{\rvd}{{\randomvalue{d}}}	% d
+\newcommand{\rvbd}{{\mathbsf{d}}}
+\newcommand{\rve}{{\randomvalue{e}}}	% e
+\newcommand{\rvbe}{{\mathbsf{e}}}
+\newcommand{\rvf}{{\randomvalue{f}}}	% f
+\newcommand{\rvg}{{\randomvalue{g}}}
+\newcommand{\rvh}{{\randomvalue{h}}}	% h
+\newcommand{\svh}{{\samplevalue{h}}}	% c
+\newcommand{\rvbh}{{\mathbsf{h}}}
+\newcommand{\rvi}{{\randomvalue{i}}}	% i
+\newcommand{\svi}{{\samplevalue{i}}}	% i
+\newcommand{\rvk}{{\randomvalue{k}}}	% k
+\newcommand{\svk}{{\samplevalue{k}}}	% k
+\newcommand{\rvl}{{\randomvalue{l}}}
+\newcommand{\svl}{{\samplevalue{l}}}
+\newcommand{\rvm}{{\randomvalue{m}}}	% m
+\newcommand{\svm}{{\samplevalue{m}}}	% m
+\newcommand{\rvmh}{\hat{\rvm}}
+\newcommand{\rvbm}{{\mathbsf{m}}}
+\newcommand{\rvbmh}{\hat{\rvbm}}
+\newcommand{\rvn}{{\randomvalue{n}}}	% n
+\newcommand{\rvbn}{{\mathbsf{n}}}
+\newcommand{\rvq}{{\randomvalue{q}}}	% q
+\newcommand{\svq}{{\samplevalue{q}}}
+\newcommand{\rvr}{{\randomvalue{r}}}	% r
+\newcommand{\svr}{{\samplevalue{r}}}
+\newcommand{\rvs}{{\randomvalue{s}}}	% s
+\newcommand{\svs}{{\samplevalue{s}}}
+\newcommand{\rvsh}{\hat{\rvs}}
+\newcommand{\rvbs}{{\mathbsf{s}}}
+\newcommand{\rvt}{{\randomvalue{t}}}	% t
+\newcommand{\svt}{{\samplevalue{t}}}
+\newcommand{\rvu}{{\randomvalue{u}}}	% u
+\newcommand{\svu}{{\samplevalue{u}}}
+\newcommand{\svbu}{{\mathbf{u}}}
+\newcommand{\rvbu}{{\mathbsf{u}}}
+\newcommand{\rvv}{{\randomvalue{v}}}	% v
+\newcommand{\svv}{{\samplevalue{v}}}
+\newcommand{\rvbv}{{\mathbsf{v}}}
+\newcommand{\svbv}{{\mathbf{v}}}
+\newcommand{\rvw}{{\randomvalue{w}}}	% w
+\newcommand{\svw}{{\samplevalue{w}}}
+\newcommand{\rvbw}{{\mathbsf{w}}}
+\newcommand{\svbw}{{\mathbf{w}}}
+\newcommand{\rvwh}{\hat{\rvw}}
+\newcommand{\rvx}{{\randomvalue{x}}}	% x
+\newcommand{\svx}{{\samplevalue{x}}}
+\newcommand{\rvxh}{\hat{\rvx}}
+\newcommand{\rvbx}{{\mathbsf{x}}}
+\newcommand{\rvy}{{\randomvalue{y}}}	% y
+\newcommand{\svy}{{\samplevalue{y}}}
+\newcommand{\rvyh}{{\hat{\rvy}}}
+\newcommand{\rvby}{{\mathbsf{y}}}
+\newcommand{\rvz}{{\randomvalue{z}}}	% z
+\newcommand{\rvzh}{\hat{\rvz}}
+\newcommand{\rvbz}{{\mathbsf{z}}}
+\newcommand{\svz}{{\samplevalue{z}}}
+% Handle uppercase Greek differently
+\newcommand{\rvDelta}{\ssfDelta}
+\newcommand{\rvbDelta}{\bsfDelta}
+\newcommand{\rvTh}{\ssfTheta}
+\newcommand{\rvbTh}{\bsfTheta}
+\newcommand{\rvPh}{\ssfPhi}
+\newcommand{\rvbPh}{\bsfPhi}
+
+% Caligraphy
+\newcommand{\calA}{{\mathcal{A}}}
+\newcommand{\calB}{{\mathcal{B}}}
+\newcommand{\calC}{{\mathcal{C}}}
+\newcommand{\calD}{{\mathcal{D}}}
+\newcommand{\calE}{{\mathcal{E}}}
+\newcommand{\calF}{{\mathcal{F}}}
+\newcommand{\calG}{{\mathcal{G}}}
+\newcommand{\calH}{{\mathcal{H}}}
+\newcommand{\calI}{{\mathcal{I}}}
+\newcommand{\calJ}{{\mathcal{J}}}
+\newcommand{\calK}{{\mathcal{K}}}
+\newcommand{\calL}{{\mathcal{L}}}
+\newcommand{\calM}{{\mathcal{M}}}
+\newcommand{\calN}{{\mathcal{N}}}
+\newcommand{\calO}{{\mathcal{O}}}
+\newcommand{\calP}{{\mathcal{P}}}
+\newcommand{\calQ}{{\mathcal{Q}}}
+\newcommand{\calR}{{\mathcal{R}}}
+\newcommand{\calT}{{\mathcal{T}}}
+\newcommand{\calS}{{\mathcal{S}}}
+\newcommand{\calU}{{\mathcal{U}}}
+\newcommand{\calV}{{\mathcal{V}}}
+\newcommand{\calX}{{\mathcal{X}}}
+\newcommand{\calY}{{\mathcal{Y}}}
+\newcommand{\calW}{{\mathcal{W}}}
+\newcommand{\calZ}{{\mathcal{Z}}}
+
+\newcommand{\bfx}{\mathbf{x}}
+
+\newcommand{\bbR}{\mathbb{R}}
